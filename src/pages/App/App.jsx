@@ -6,6 +6,7 @@ import LoginPage from '../LoginPage/LoginPage'
 import NavBar from '../../components/NavBar/NavBar';
 import MoviesListPage from '../MoviesListPage/MoviesListPage';
 import MovieDetailPage from '../MovieDetailPage/MovieDetailPage';
+import ActorDetailPage from '../ActorDetailPage/ActorDetailPage';
 import ActorListPage from '../ActorListPage/ActorListPage';
 
 export default function App() {
@@ -19,8 +20,9 @@ export default function App() {
             <Routes>
               {/* Route components in here */}
               <Route path="/movies" element={<MoviesListPage/>} />
-              <Route path="/movie/:id" element={<MovieDetailPage/>} />
+              <Route path="/movies/:id" element={<MovieDetailPage/>} />
               <Route path="/actors" element={<ActorListPage/>} />
+              <Route path="/actors/:id" element={<ActorDetailPage/>} />
             </Routes>
           </>
           :
