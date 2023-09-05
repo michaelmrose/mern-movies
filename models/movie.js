@@ -11,12 +11,11 @@ const movieSchema = new Schema({
         type: Date,
         required: true
     },
-    description: {
+    posterPath:{
         type: String,
-        required: true,
-        maxlength: [3000, "Cannot accept more than 3000 characters"]
+        required: true
     },
-    actors: [{
+    cast: [{
         type:Schema.Types.ObjectId,
         ref: "Actor"
     }]
