@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import sendRequest from './path-to-sendRequest';
+import sendRequest from './send-request';
 
 async function acquire(url) {
   try {
@@ -10,7 +10,7 @@ async function acquire(url) {
   }
 }
 
-export default function useAcquireData(url) {
+export default function useLoadData(url) {
   const [data, setData] = useState(null);
 
   useEffect(() => {
